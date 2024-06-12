@@ -376,7 +376,7 @@ header #menu-btn:hover{
 
 .about .content .about-info .info h4{
     font-size: 1.6rem;
-    color: var(--white);
+    color: var(--black);
     padding-bottom: 1rem;
 }
 
@@ -413,7 +413,7 @@ header #menu-btn:hover{
     -ms-flex: 1 1 18rem;
         flex: 1 1 18rem;
     text-align: center;
-    background-color: var(--Gray);
+    background-color: var(--black);
     padding: 2rem;
 }
 
