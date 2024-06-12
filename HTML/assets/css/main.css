@@ -413,7 +413,7 @@ header #menu-btn:hover{
     -ms-flex: 1 1 18rem;
         flex: 1 1 18rem;
     text-align: center;
-    background-color: var(--black);
+    background-color: var(--Gray);
     padding: 2rem;
 }
 
@@ -460,7 +460,7 @@ header #menu-btn:hover{
     justify-content: space-between;
     padding:.7rem 0;
     font-size: 1.7rem;
-    color: var(--white);
+    color: var(--black);
     font-weight: 400;
 }
 
@@ -573,7 +573,7 @@ header #menu-btn:hover{
 }
 
 .experience-item p{
-    color: var(--Gray);
+    color: var(--black);
     font-size: 1.6rem;
     line-height: 2.5rem;
 }
@@ -618,7 +618,7 @@ header #menu-btn:hover{
 }
 
 .service-item i{
-    color: var(--white);
+    color: var(--black);
     font-size: 4rem;
 }
 
@@ -630,7 +630,7 @@ header #menu-btn:hover{
 
 .service-item p{
     font-size: 1.6rem;
-    color: var(--Gray);
+    color: var(--black);
     line-height: 1.6;
 }
 
@@ -666,8 +666,8 @@ header #menu-btn:hover{
 
 .controls .button.active{
     cursor: pointer;
-    background-color: var(--Blueoutro);
-    color: var(--white);
+    background-color: var(--Gray);
+    color: var(--black);
 }
 
 .portfolio .box-container{
@@ -720,7 +720,7 @@ header #menu-btn:hover{
 .portfolio-item .content h4{
     font-size: 2rem;
     font-weight: bold;
-    color: var(--Blueoutro);
+    color: var(--Gray);
     transform-origin: top;
     -webkit-transform: translateY(-10rem);
             transform: translateY(-10rem);
@@ -735,7 +735,7 @@ header #menu-btn:hover{
 .portfolio-item .content p{
     font-size: 1.8rem;
     font-weight: 400;
-    color: var(--white);
+    color: var(--black);
     transform-origin: top;
     -webkit-transform: translateY(-10rem);
             transform: translateY(-10rem);
@@ -748,7 +748,7 @@ header #menu-btn:hover{
 
 .portfolio-item .content .view-btn{
     font-size: 2rem;
-    color: var(--Blueoutro);
+    color: var(--Gray);
     transform-origin: top;
     -webkit-transform: translateY(-10rem);
             transform: translateY(-10rem);
@@ -846,7 +846,7 @@ header #menu-btn:hover{
 }
 
 .testi-item:hover{
-    border-color: var(--Blueoutro);
+    border-color: var(--black);
 }
 
 .testi-item img{
@@ -864,7 +864,7 @@ header #menu-btn:hover{
 }
 
 .testi-item p{
-    color: var(--Blueoutro);
+    color: var(--black);
     font-size: 1.5rem;
     line-height: 1.5;
 }
