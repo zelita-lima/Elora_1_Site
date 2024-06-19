@@ -999,12 +999,12 @@ header #menu-btn:hover{
 
 .contact-info h3{
     font-size: 3rem;
-    color: var(--white);
+    color: var(--Blueoutro);
 }
 
 .contact-info > p{
     font-size: 1.6rem;
-    color: var(--Gray);
+    color: var(--black);
     padding: 0.5rem 0;
 }
 
@@ -1035,7 +1035,7 @@ header #menu-btn:hover{
 .contact-info .info-item .detail .fas,
 .contact-info .info-item .detail .fab{
     border-radius: 50%;
-    color: var(--Blueoutro);
+    color: var(--black);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;;
@@ -1050,7 +1050,7 @@ header #menu-btn:hover{
 
 .contact-info .info-item .detail p{
     font-size: 1.6rem;
-    color: var(--Blueoutro);
+    color: var(--black);
     line-height: 1.6;
     padding-left: 1rem;
 }
@@ -1064,7 +1064,7 @@ header #menu-btn:hover{
 .contact-form .box{
     width: 100%;
     text-transform: none;
-    color: var(--Blueoutro);
+    color: var(--black);
     font-size: 1.6rem;
     border: 0.1rem solid rgba(0, 0, 0, 0.1);
     padding: 1.5rem;
@@ -1077,7 +1077,7 @@ header #menu-btn:hover{
 }
 
 .contact-form .box::placeholder{
-    color: var(--Blueoutro);
+    color: var(--black);
 }
 
 .contact-form textarea{
