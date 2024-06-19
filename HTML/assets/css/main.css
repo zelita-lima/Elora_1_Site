@@ -1020,7 +1020,7 @@ header #menu-btn:hover{
 
 .contact-info .info-item h4{
     font-size: 1.8rem;
-    color: var(--white);
+    color: var(--Blueoutro);
 }
 
 .contact-info .info-item .detail{
@@ -1073,7 +1073,7 @@ header #menu-btn:hover{
 }
 
 .contact-form .box:focus{
-    border-color: var(--white);
+    border-color: var(--Blueoutro);
 }
 
 .contact-form .box::placeholder{
@@ -1115,7 +1115,7 @@ footer .social .fab{
     border-radius: 50%;
     height: 4rem;
     width: 4rem;
-    color: var(--white);
+    color: var(--Blueoutro);
     font-size: 2rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1131,12 +1131,12 @@ footer .social .fab{
 
 footer .social .fab:hover{
     color: var(--black);
-    background-color: var(--white);
+    background-color: var(--Blueoutro);
 }
 
 footer .content p{
     font-size: 2rem;
-    color: var(--white);
+    color: var(--Blueoutro);
 }
 
 footer .content p span{
