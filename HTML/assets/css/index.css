@@ -5,6 +5,7 @@
     --darkiest-color: #000;  
     --white-color:#ffffff; 
     --darkless-color: #156893;
+    --lightes-color: #d1eaee
    
 }
 
@@ -30,7 +31,7 @@ h5,
 h6,
 .bem-vindo{
     color: var(--darkless-color) !important;
-    font-family: 'Dancing Script',;
+    font-family: 'Dancing Script','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 700;
 }
 
@@ -40,13 +41,13 @@ a {
 }
 
 p {
-    color: var(--darkless-color);
+    color: var(--white-color);
 }
 
 input {
     width: 100%;
     padding: 10px;
-    border: 1px solid var(--darkless-color);
+    border: 1px solid var(--white-color);
     border-radius: 50px;
 }
 
@@ -54,7 +55,7 @@ input:focus, select:focus{
     outline: 4px solid var(--darkless-color) !important;
 }
 select option:hover{
-    background-color: var(--darkless-color);
+    background-color: var(--darkiest-color);
 }
 
 /*--------------------------------------------------------------
@@ -76,7 +77,7 @@ section {
     /* margin-bottom: 20px; */
     padding-bottom: 0px;
     position: relative;
-    color: var(--darkless-color);
+    color: var(--white-color);
 }
 
 
