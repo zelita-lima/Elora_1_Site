@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root{
     --light-pink:#e2e2e2;
     --dark-pink:#e2e2e2;
@@ -107,7 +108,7 @@ i , a{
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
     color: var(--darkiest-color) !important;
-    background-color: var(--orange-color) !important;
+    background-color: var(--darkless-color) !important;
 }
 
 input, button:not(.btn-link) {
