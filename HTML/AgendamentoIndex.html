@@ -91,6 +91,17 @@
         </div>
 
     </div>
+<!--Butao Voltar-->
+
+<section class="container text-center">
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <div>
+            <button type="button" id="send-button2" class="nav-link active btn btn-danger btn-block" style="flex: 1; margin-left: 5px;" onclick="window.location.href = 'index.html';">
+                Voltar
+            </button>
+        </div>
+    </div>
+</section>
 
     <div class="modal fade" id="EditarUsuario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -182,31 +193,74 @@
                 </div>  
                 <div class="modal-body">
                     <form>
-                         <div class="mb-3">
-                            <label for="nome">Nome</label>
-                            <input type="text" id="ExcNome" class="form-control" placeholder="Digite seu nome..." readonly>
-
+                        <p style="color:#00007e">Campos com * Azul são obrigatórios</p>
+                        <div class="mb-3 row">
+                            <div class="col-md-6">
+                                <input id="EditNome" type="text" class="form-control" placeholder="Digite o nome do cliente">
+                            </div>
+                            <div class="col-md-6">
+                                <label style="color:#00007e">*</label>
+                            </div>
                         </div>
-                        <div class="mb-3">
-                            <label for="email">Email</label>
-                            <input type="email" id="ExcEmail" class="form-control" placeholder="Digite seu email..." readonly>
 
+                        <div class="mb-3 row">
+                            <div class="col-md-6">
+                                <input id="EditEmail" type="text" class="form-control" placeholder="Digite o email">
+                            </div>
+                            <div class="col-md-6">
+                                <label style="color:#00007e">*</label>
+                            </div>
                         </div>
-                        <div class="mb-3">
-                            <label for="telefone">Telefone</label>
-                            <input type="text" id="ExcTel" class="form-control" placeholder="Digite seu telefone..." readonly>
 
+                        <div class="mb-3 row">
+                            <div class="col-md-7">
+                                <input id="EditTelefone" type="email" class="form-control" placeholder="Digite o telefone">
+                            </div>
+                            <div class="col-md-5">
+                                <label style="color:#00007e">*</label>
+                            </div>
                         </div>
-                        <input type="hidden" id="IdExc" class="form-control" placeholder="Digite seu nome..." readonly>
+                        
+                        <div class="mb-3 row">
+                            <div class="col-md-6">
+                                <input id="EditData" type="text" class="form-control" placeholder="Digite a data">
+                            </div>
+                            <div class="col-md-6">
+                                <label style="color:#00007e">*</label>
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <div class="col-md-6">
+                                <input id="EditTecn" type="text" class="form-control" placeholder="Digite a Tecnica">
+                            </div>
+                            <div class="col-md-6">
+                                <label style="color:#00007e">*</label>
+                            </div>
+                        </div> 
+                        <div class="mb-3 row">
+                            <div class="col-md-6">
+                                <input id="EditVlue" type="text" class="form-control" placeholder="Digite o Valor">
+                            </div>
+                            <div class="col-md-6">
+                                <label style="color:#00007e">*</label>
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <div class="col-md-6">
+                                <input id="EditConfirmção" type="text" class="form-control" placeholder="Digite a Comfirmação">
+                            </div>
+                            <div class="col-md-6">
+                                <label style="color:#00007e">*</label>
+                            </div>
+                        </div> 
+                        <input type="hidden" id="IdEdt" value="" />
 
                     </form>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                        <button type="button" onclick="ExcluirUsuario()" class="btn btn-primary">Excluir</button>
-                    </div>
-
                 </div>
-
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary" onclick=" AlterarUsuario()">Salvar</button>
+                </div>
             </div>
         </div>
     </div>
