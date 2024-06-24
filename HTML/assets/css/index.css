@@ -4,7 +4,7 @@
 :root {
     --darkiest-color: #000;  
     --white-color:#ffffff; 
-    --darkless-color: #156893;
+    --darkless-color: #315689;
     --lightes-color: #d1eaee
    
 }
@@ -57,6 +57,8 @@ input:focus, select:focus{
 select option:hover{
     background-color: var(--darkiest-color);
 }
+
+
 
 /*--------------------------------------------------------------
 # Sections General

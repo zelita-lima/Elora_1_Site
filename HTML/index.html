@@ -22,6 +22,52 @@
     <!-- Custom Stylesheets -->
     <link rel="stylesheet"  href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
+    <style>
+        .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 200px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      padding: 8px;
+      border-radius: 3%;
+      right: 0; /* Alinha o submenu à direita */
+  }
+  
+  .dropdown-content a {
+      color: black;
+      padding: 7px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      margin: 5px;
+  }
+  
+  .dropdown-content a:hover {
+      background-color: #315689;
+      color: color: #ffffff;!important/* Muda a cor da letra para azul ao passar o mouse */
+  }
+  
+  .dropdown:hover .dropdown-content {
+      display: block;
+  }
+   .dropdown-content a {
+      color: black;
+      padding: 18px; /* Adiciona padding */
+      text-decoration: none;
+      display: flex;
+      margin: 1px; /* Adiciona a margem */
+      border-radius: 3%;
+      
+  }
+  
+  .dropdown-content a:hover {  
+      border:#315689 solid 2px;
+      border-radius: 3%;
+      color: #ffffff!important; 
+  }
+  </style>
 
 </head>
 <body>
@@ -81,10 +127,34 @@
                 <i class="fa fa-phone-square fa-lg" aria-hidden="true"></i>
                 <a href="#contact" style="margin-left: 10px;">Contato</a>
             </span>
-            <span style="display: flex; align-items: center; margin-right: 20px;">
-                <i class="fa fa-user" aria-hidden="true"></i>
-                <a href="Login.html" style="margin-left: 10px;">Login</a>
-            </span>
+            <div class="dropdown" style="position: relative; display: inline-block;">
+                <span style="display: flex; align-items: center; margin-right: 20px;">
+                    <i class="fa fa-user" aria-hidden="true""></i>
+                    <a href="Login.html" style="margin-left: 10px;">Login</a>
+                </span>
+                <div class="dropdown-content" style="display: none; position: absolute; background-color:#ffffff; width: 200px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1; padding: 8px; border-radius: 3%;">
+                    <a href="UsuarioIndex.html" style="padding: 7px; text-decoration: none; display: flex; align-items: center; margin: 5px;">
+                        <i class="fa fa-users" aria-hidden="true" style="margin-right: 8px;"></i>
+                        Usuarios
+                    </a>
+                    <a href="#settings" style=" padding: 7px; text-decoration: none; display: flex; align-items: center; margin: 5px;">
+                        <i class="fa fa-address-book" aria-hidden="true" style="margin-right: 8px;"></i>
+                        Agendamento Admin
+                    </a>
+                    <a href="#settings" style=" padding: 7px; text-decoration: none; display: flex; align-items: center; margin: 5px;">
+                        <i class="fa fa-calendar" aria-hidden="true" style="margin-right: 8px;"></i>
+                        Gerenciamento User
+                    </a>
+                    <a href="#settings" style="padding: 7px; text-decoration: none; display: flex; align-items: center; margin: 5px;">
+                        <i class="fa fa-bars" aria-hidden="true" style="margin-right: 8px;"></i>
+                         Cadastro Agendamento
+                    </a>
+                    <a href="#logout" style=" padding: 7px; text-decoration: none; display: flex; align-items: center; margin: 5px;">
+                        <i class="fa fa-folder" aria-hidden="true" style="margin-right: 8px;"></i>
+                        Relatório
+                    </a>
+                </div>
+</div>
         <!-- Menubar -->
         <div class="fas fa-bars" id="menu-btn"></div>
         
@@ -787,6 +857,16 @@
           e.preventDefault();
         });
     </script>
+<script>
+    // Script to handle the dropdown functionality
+    document.querySelector('.dropdown').addEventListener('mouseover', function () {
+        this.querySelector('.dropdown-content').style.display = 'block';
+    });
+
+    document.querySelector('.dropdown').addEventListener('mouseout', function () {
+        this.querySelector('.dropdown-content').style.display = 'none';
+    });
+</script>
 
 </body>
 </html>
